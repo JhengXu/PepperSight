@@ -1,0 +1,49 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.uv-cache/
+
+# Node / Next.js
+node_modules/
+.next/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Datasets, model weights, and experiment outputs
+datasets/
+dataset/
+data/*.db
+runs/
+weights/
+checkpoints/
+uploads/*
+!uploads/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.joblib
+
+# Local media and generated artifacts
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+*.zip
+

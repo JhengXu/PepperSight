@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PepperSight 厉辣·辣椒 AI 智能分级一体机 - 第一届贵客松 #Guikesong 项目" />
+    <title>PepperSight | 厉辣·辣椒 AI 智能分级一体机</title>
+    <style>
+      :root { color-scheme: dark; --red:#ff3b30; --blue:#16a8ff; --ink:#eef4fb; --muted:#9ba9b8; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin:0; font-family:Inter,"Noto Sans SC","PingFang SC",system-ui,sans-serif; color:var(--ink); background:#080c11; line-height:1.7; }
+      a { color:inherit; }
+      .hero { min-height:86vh; display:grid; place-items:center; padding:72px 24px; position:relative; overflow:hidden; background:radial-gradient(circle at 78% 28%,#0d4165 0,transparent 32%),radial-gradient(circle at 18% 82%,#521111 0,transparent 28%); }
+      .hero:before { content:""; position:absolute; inset:0; background:linear-gradient(120deg,transparent 20%,rgba(22,168,255,.06),transparent 55%); pointer-events:none; }
+      .hero-inner { width:min(1180px,100%); display:grid; grid-template-columns:1fr 1.25fr; gap:56px; align-items:center; z-index:1; }
+      .eyebrow { color:#ff655e; text-transform:uppercase; letter-spacing:.18em; font-weight:800; }
+      h1 { font-size:clamp(42px,6vw,78px); line-height:1.04; margin:18px 0; letter-spacing:-.04em; }
+      .lead { font-size:clamp(18px,2vw,26px); color:#c7d2de; max-width:680px; }
+      .actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
+      .button { display:inline-flex; text-decoration:none; padding:12px 20px; border-radius:999px; font-weight:750; border:1px solid #405064; }
+      .primary { background:var(--red); border-color:var(--red); color:white; }
+      .hero img { width:100%; border-radius:22px; box-shadow:0 28px 90px rgba(0,0,0,.55); border:1px solid #26384a; }
+      main { width:min(1120px,calc(100% - 40px)); margin:auto; }
+      section { padding:92px 0; }
+      h2 { font-size:clamp(30px,4vw,48px); margin:0 0 16px; }
+      .section-intro { color:var(--muted); max-width:760px; margin:0 0 36px; }
+      .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+      .card { padding:26px; border:1px solid #263341; border-radius:18px; background:linear-gradient(145deg,#111923,#0b1017); }
+      .card strong { display:block; color:#fff; font-size:20px; margin-bottom:8px; }
+      .card span { color:var(--muted); }
+      .flow { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:36px; }
+      .flow div { text-align:center; padding:20px 10px; border-radius:14px; background:#121d29; border-bottom:3px solid var(--blue); }
+      .gallery { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+      figure { margin:0; background:#101720; border:1px solid #263341; border-radius:18px; overflow:hidden; }
+      figure img { width:100%; display:block; }
+      figcaption { color:#aebac7; padding:12px 16px; }
+      .notice { padding:22px 24px; border-left:4px solid var(--red); background:#15171c; color:#c8d0d8; border-radius:8px; }
+      footer { padding:42px 24px; text-align:center; color:#778594; border-top:1px solid #1a2530; }
+      @media (max-width:820px) { .hero-inner,.grid,.gallery { grid-template-columns:1fr; } .flow { grid-template-columns:1fr 1fr; } .hero { padding-top:44px; } }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">#Guikesong · AI · 机器视觉 · 分级执行</div>
+          <h1>PepperSight<br />厉辣</h1>
+          <p class="lead">把贵州辣椒分级标准，做成中小客户买得起的生产力。</p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/JhengXu/PepperSight">查看开源代码</a>
+            <a class="button" href="#gallery">浏览路演图集</a>
+          </div>
+        </div>
+        <img src="images/pitch/01-cover.png" alt="厉辣辣椒 AI 智能分级一体机" />
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>从视觉到分选的完整闭环</h2>
+        <p class="section-intro">面向门店、合作社与中小加工户，以低成本硬件承载可配置的辣椒品种识别与一/二级判定。</p>
+        <div class="flow"><div>进料</div><div>视觉采集</div><div>AI 识别</div><div>DB52 判级</div><div>分选执行</div></div>
+      </section>
+
+      <section>
+        <h2>技术栈</h2>
+        <p class="section-intro">采用可本地部署、可测试、可扩展的全栈架构。</p>
+        <div class="grid">
+          <div class="card"><strong>Vision & ML</strong><span>OpenCV · YOLO11 · PyTorch · scikit-learn · XGBoost</span></div>
+          <div class="card"><strong>Backend</strong><span>FastAPI · Pydantic · SQLAlchemy · SQLite · WebSocket</span></div>
+          <div class="card"><strong>Frontend</strong><span>Next.js 14 · React 18 · TypeScript · Tailwind CSS · Recharts</span></div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>项目路演图集</h2>
+        <p class="section-intro">图集已排除团队个人介绍。数据指标、价格和商业假设以图中的口径与声明为准。</p>
+        <div class="gallery">
+          <figure><img src="images/pitch/02-industry.png" alt="产业基础" /><figcaption>产业基础</figcaption></figure>
+          <figure><img src="images/pitch/03-field-insights.png" alt="一线洞察" /><figcaption>一线洞察</figcaption></figure>
+          <figure><img src="images/pitch/04-solution.png" alt="解决方案" /><figcaption>解决方案</figcaption></figure>
+          <figure><img src="images/pitch/05-technology.png" alt="技术路径" /><figcaption>技术路径</figcaption></figure>
+          <figure><img src="images/pitch/06-dataset.png" alt="数据资产" /><figcaption>数据资产</figcaption></figure>
+          <figure><img src="images/pitch/07-competition.png" alt="竞品格局" /><figcaption>竞品格局</figcaption></figure>
+          <figure><img src="images/pitch/08-market.png" alt="市场与经济" /><figcaption>市场与经济</figcaption></figure>
+          <figure><img src="images/pitch/09-business-model.png" alt="商业模式" /><figcaption>商业模式</figcaption></figure>
+          <figure><img src="images/pitch/10-roadmap.png" alt="发展规划" /><figcaption>发展规划</figcaption></figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="notice"><strong>说明：</strong>在线页面是已部署的项目与技术展示。完整实时识别需外接摄像头、本地模型权重与 FastAPI/Next.js 运行环境。本仓库不包含私有数据集和模型权重。</div>
+      </section>
+    </main>
+
+    <footer>PepperSight / 厉辣 · 第一届贵客松 #Guikesong · 2026</footer>
+  </body>
+</html>

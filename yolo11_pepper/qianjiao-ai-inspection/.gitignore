@@ -1,0 +1,19 @@
+# Python
+backend/.venv/
+data/*.db
+backend/.pytest_cache/
+backend/**/__pycache__/
+*.pyc
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+frontend/npm-debug.log*
+frontend/pnpm-debug.log*
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

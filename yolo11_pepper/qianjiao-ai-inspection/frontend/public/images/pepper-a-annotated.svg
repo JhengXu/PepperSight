@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#131b1c"/><path d="M0 116H1280M0 604H1280" stroke="#53605d" stroke-width="12"/><rect y="135" width="1280" height="450" fill="#273132"/><g stroke="#384344" stroke-width="2"><path d="M80 135v450M240 135v450M400 135v450M560 135v450M720 135v450M880 135v450M1040 135v450M1200 135v450"/></g>
+  <g transform="translate(470 210) rotate(-7 190 150)"><path d="M137 91C91 126 55 202 71 253c20 66 103 63 157 39 77-35 145-115 144-190-1-42-33-69-78-64-55 6-99 13-157 53Z" fill="#b83f32"/><path d="M87 235c38 34 97 29 151 5 70-31 112-86 130-139-1 73-68 155-144 190-55 25-135 28-157-36-5-14-5-29-3-44 5 10 13 18 23 24Z" fill="#7e2b25" opacity=".72"/><path d="M305 53c21-27 46-41 75-37-12 12-21 27-25 45l-50 15Z" fill="#45885f"/><path d="M303 57c-8 13-7 28 5 39 20-5 39-19 49-39-17-9-37-9-54 0Z" fill="#39764f"/><path d="M132 125c43-41 109-57 163-53" fill="none" stroke="#e17868" stroke-width="12" stroke-linecap="round" opacity=".65"/></g>
+  <rect x="488" y="206" width="387" height="328" fill="none" stroke="#3dc38a" stroke-width="3"/><rect x="488" y="169" width="251" height="37" fill="#3dc38a"/><text x="501" y="194" fill="#07100c" font-family="Arial" font-size="18" font-weight="700">PEPPER  97.8% · COMPLETE</text>
+  <path d="M656 344h52M682 318v52" stroke="#3dc38a" stroke-width="2"/>
+</svg>
+
